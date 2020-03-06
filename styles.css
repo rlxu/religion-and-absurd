@@ -3,6 +3,37 @@
   margin-top: 40px;
 }
 
+.section_header {
+  display: inline-block;
+  margin-top: 40px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.left {
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.right {
+  float: right;
+  margin-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.icon {
+  position: absolute;
+  right: 20px;
+  top: 55px;
+  font-size: 30px;
+}
+
 h3 {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -46,4 +77,11 @@ ul {
 
 .spacing {
   margin-top: 0px;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 40px;
+  padding-right: 20px;
 }
