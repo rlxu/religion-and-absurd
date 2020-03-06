@@ -1,0 +1,37 @@
+.header {
+  text-align: center;
+  margin-top: 40px;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#toc_container {
+  background: #f9f9f9 none repeat scroll 0 0;
+  border: 1px solid #aaa;
+  display: table;
+  font-size: 95%;
+  margin: auto;
+  padding: 20px;
+  width: 50%;
+}
+
+.toc_title {
+  font-weight: 700;
+  text-align: center;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li {
+  list-style: outside none none !important;
+}
+
+.toc_list {
+  display: inline-block;
+}
+
+ul {
+  padding: 0;
+  margin: auto;
+}
