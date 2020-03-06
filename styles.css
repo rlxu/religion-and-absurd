@@ -13,14 +13,17 @@ h3 {
   border: 1px solid #aaa;
   display: table;
   font-size: 95%;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
   padding: 20px;
-  width: 50%;
+  width: auto;
 }
 
 .toc_title {
   font-weight: 700;
   text-align: center;
+  margin-top: 0px;
 }
 
 #toc_container li, #toc_container ul, #toc_container ul li {
@@ -29,9 +32,18 @@ h3 {
 
 .toc_list {
   display: inline-block;
+  vertical-align: top;
 }
 
 ul {
   padding: 0;
   margin: auto;
+}
+
+.right_list {
+  margin-left: 20px;
+}
+
+.spacing {
+  margin-top: 0px;
 }
