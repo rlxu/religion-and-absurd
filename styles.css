@@ -5,33 +5,48 @@
 
 .section_header {
   display: inline-block;
+  width: 100%;
   margin-top: 40px;
-  width: 90%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  vertical-align: middle;
 }
 
 .left {
   float: left;
-  margin-left: 20px;
-  margin-top: 10px;
+  margin-left: 40px;
+  margin-top: 5px;
   margin-bottom: 10px;
 }
 
 .right {
   float: right;
-  margin-right: 30px;
-  margin-top: 10px;
+  margin-right: 55px;
+  margin-top: 5px;
   margin-bottom: 10px;
 }
 
+.right_icon {
+  float: right;
+  margin-right: 50px;
+  margin-bottom: 10px;
+}
+
+.page_title {
+  font-weight: bold;
+  font-size: 1.40em;
+  margin-left: 10px;
+  margin-left: 10px;
+}
+
 .icon {
-  position: absolute;
-  right: 20px;
-  top: 55px;
   font-size: 30px;
+}
+
+.btn {
+  background: none;
+  border: none;
+  margin-left: 110px;
 }
 
 h3 {
@@ -79,9 +94,118 @@ ul {
   margin-top: 0px;
 }
 
-footer {
-  position: absolute;
+.end {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.paragraph {
+  display: block;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 15px;
+}
+
+.bottom_nav {
+  display: inline-block;
+  margin-top: 10px;
   width: 100%;
   bottom: 40px;
-  padding-right: 20px;
+}
+
+.text_body {
+  width: 100%;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 65%;
+}
+
+.inline-img {
+  margin-right: -300px;
+  margin-bottom: -230px;
+  margin-top: -300px;
+  margin-left: -80px;
+  height: 800px;
+}
+
+@media screen and (max-width: 900px){
+  .text_body {
+    width: 100%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75%;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .text_body {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+  }
+
+  .paragraph {
+    display: block;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+  }
+
+  .btn {
+    background: none;
+    border: none;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .text_body {
+    width: 100%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+
+  .paragraph {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+  }
+
+  .left {
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .right {
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .right_icon {
+    float: right;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    background: none;
+    border: none;
+    margin-left: 10px;
+  }
+
+  .audio {
+    display: inline-table;
+  }
 }

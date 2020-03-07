@@ -1,4 +1,4 @@
-<html lang="en">
+template = str('''<html lang="en">
 <head>
   <meta charset="utf-8">
 
@@ -39,7 +39,18 @@
     </span>
   </div>
   <div class="bottom_nav">
+    <a href="001.html" class="left">Previous Section</a>
     <a href="002.html" class="right">Next Section</a>
   </div>
 </body>
-</html>
+</html>''')
+
+for i in range(2, 10):
+    f = open("pages/00" + str(i) + ".html", "w")
+    f.write(template)
+    f.close()
+
+for i in range(10, 66):
+    f = open("pages/0" + str(i) + ".html", "w")
+    f.write(template)
+    f.close()
