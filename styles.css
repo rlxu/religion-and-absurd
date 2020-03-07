@@ -121,12 +121,32 @@ ul {
   max-width: 65%;
 }
 
+.img_cover {
+  width: 30%;
+  max-width: 300px;
+  min-width: 200px;
+  margin-bottom: 25px;
+}
+
 .inline-img {
   margin-right: -300px;
   margin-bottom: -230px;
   margin-top: -300px;
   margin-left: -80px;
   height: 800px;
+}
+
+.footer_text {
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
+}
+
+footer {
+  border-top: 1px solid grey;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  padding-top: 15px;
 }
 
 @media screen and (max-width: 900px){

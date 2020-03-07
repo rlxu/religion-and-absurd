@@ -12,7 +12,7 @@ template = str('''<html lang="en">
 
 <body>
   <div class="section_header">
-    <a href="index.html" class="left">Back to Table of Contents</a>
+    <a href="../index.html" class="left">Back to Table of Contents</a>
     <div class="audio">
       <span class="page_title">Introduction:</span>
       <button class="btn right_icon"><i class="fa fa-file-audio-o icon"></i></button>
