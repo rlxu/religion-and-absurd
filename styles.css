@@ -178,6 +178,10 @@ ul {
   margin-bottom: 5px;
 }
 
+button {
+  cursor: pointer;
+}
+
 .quoted-paragraph {
   display: block;
   margin: auto;
