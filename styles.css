@@ -119,21 +119,26 @@ h3 {
 }
 
 #toc_container {
-  background: #f9f9f9 none repeat scroll 0 0;
+  background: #f9f9f9;
   border: 1px solid #aaa;
-  display: table;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   font-size: 95%;
-  margin-right: auto;
+  width: 70%;
+  max-width: 800px;
   margin-left: auto;
+  margin-right: auto;
   margin-bottom: 40px;
   padding: 20px;
-  width: auto;
 }
 
 .toc_title {
+  width: 80%;
   font-weight: 700;
   text-align: center;
   margin-top: 0px;
+  margin-bottom: 0;
 }
 
 #toc_container li, #toc_container ul, #toc_container ul li {
@@ -141,17 +146,13 @@ h3 {
 }
 
 .toc_list {
-  display: inline-block;
   vertical-align: top;
+  margin: 15px;
 }
 
 ul {
   padding: 0;
   margin: auto;
-}
-
-.right_list {
-  margin-left: 20px;
 }
 
 .spacing {
