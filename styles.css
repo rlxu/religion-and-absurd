@@ -34,15 +34,14 @@
 
 .page_title {
   font-weight: bold;
-  font-size: 1.40em;
+  font-size: 1.20em;
   margin-left: 10px;
   margin-left: 10px;
 }
 
 .table {
-  margin-left: auto;
   display: flex;
-  width: 90%;
+  flex-wrap: wrap;
 }
 
 .my_table {
@@ -54,6 +53,7 @@
 
 .leftlist {
   height: 300px;
+  width: 370px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -61,14 +61,16 @@
 
 .rightlist {
   height: 300px;
+  width: 258px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .left_section {
-  width: 50%;
+  width: 400px;
+  margin: auto;
 }
 
 .left_section p {
@@ -76,7 +78,8 @@
 }
 
 .right_section {
-  width: 40%;
+  width: 300px;
+  margin: auto;
 }
 
 .right_section p {
@@ -194,7 +197,7 @@ ul {
   margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 75%;
+  max-width: 65%;
 }
 
 .underline {
@@ -226,11 +229,45 @@ ul {
 }
 
 .inline-img {
-  margin-right: -300px;
-  margin-bottom: -230px;
-  margin-top: -300px;
-  margin-left: -80px;
-  height: 800px;
+  margin-right: 20px;
+  margin-left: 50px;
+}
+
+.inline-img-right {
+  margin-left: 20px;
+  margin-right: 50px;
+}
+
+.centered-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.img-caption {
+  text-align: center;
+  display: block;
+  margin-right: 10px;
+  float: left;
+  margin-left: 50px;
+}
+
+.centered-img-caption {
+  text-align: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.centered-img-caption p {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.img-caption p {
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 .footer_text {
