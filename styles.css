@@ -180,7 +180,7 @@ ul {
 .quoted-paragraph {
   display: block;
   margin: auto;
-  width: 60%;
+  width: 70%;
   margin-bottom: 15px;
   text-align: center;
 }
@@ -268,6 +268,10 @@ ul {
 .img-caption p {
   margin-top: 9px;
   margin-bottom: 9px;
+}
+
+.small-img {
+  max-height: 140px;
 }
 
 .footer_text {
