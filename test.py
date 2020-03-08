@@ -1,4 +1,4 @@
-template = str('''<html lang="en">
+template1 = '''<html lang="en">
 <head>
   <meta charset="utf-8">
 
@@ -14,43 +14,90 @@ template = str('''<html lang="en">
   <div class="section_header">
     <a href="../index.html" class="left">Back to Table of Contents</a>
     <div class="audio">
-      <span class="page_title">Introduction:</span>
+      <span class="page_title">'''
+
+template15 = '''</span>
       <button class="btn right_icon"><i class="fa fa-file-audio-o icon"></i></button>
     </div>
   </div>
-  <div class="text_body">
-    <span class="paragraph">
-      Having been raised as a Catholic, I was aghast when, as a grade-schooler who took my faith very seriously, I was told that the prohibition on eating meat on Fridays had been lifted. What?! Can they do that?! Says who?! After that, the holy cows starting falling like snowflakes: the Mass was now to be in English, and breakfast could be taken before communion! Where would it end? And where did all those rules come from in the first place? Slowly I began to realize that they were invented by old priests in an incense-filled room. That’s when I started to question everything else. Having made the fateful decision to read the Bible myself, I became ever more dubious as to the authority and intentions of churches and religion in general.
-    </span>
-    <span class="paragraph">
-      In order that other persons of an open mind might make informed decisions regarding religion, I have documented some of my surprising discoveries, such as that Jesus and Paul differed widely on the qualifications for salvation, and that churches, in self-interest, chose Paul over Jesus and his brother James.
-    </span>
-    <span class="paragraph">
-      People, however, will believe what they want to believe, evidence notwithstanding, so I don’t expect to change anyone’s mind. I am resigned to being both misread and condemned by the same self-interested church zealots who threw over Jesus for Paul. If, though, you are of an open mind, please peruse these articles and come to your own conclusions.
-    </span>
-    <span class="paragraph">
-      The articles are divided into four sections: first, a chronological investigation of religious views of Scripture; second, an investigation of the real and mythical Jesus with selections from the Gospel according to Matthew; third, an analysis of motives for belief; and fourth, a list of apocalyptic (need I say, incorrect) predictions of the end of the world.
-    </span>
-    <span class="paragraph">
-      These articles are the fruit of a collective effort and remain so. I take responsibility for compiling and editing the contributions. If someone has an insight into one of the subjects treated herein or feels a mistake has been made, please enlighten us.
-    </span>
-    <span class="end paragraph">
-      ~~~~~~~
-    </span>
-  </div>
-  <div class="bottom_nav">
-    <a href="001.html" class="left">Previous Section</a>
-    <a href="002.html" class="right">Next Section</a>
-  </div>
-</body>
-</html>''')
+  <div class="text_body">\n'''
 
-for i in range(2, 10):
-    f = open("pages/00" + str(i) + ".html", "w")
-    f.write(template)
+span1 = '    <span class="paragraph">\n'
+span2 = '\n    </span>\n'
+span3 = '    <span class="end paragraph">\n'
+
+template2 = '''  </div>
+  <div class="bottom_nav">\n'''
+
+tag1 = '    <a href="00'
+tag2 = '.html" class="left">Previous Section</a>\n'
+tag3 = '    <a href="0'
+tag4 = '.html" class="right">Next Section</a>\n'
+
+template3 = '''  </div>
+</body>
+</html>\n'''
+
+list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+list2 = list(range(9, 21)) + list(range(25, 49)) + list(range(50, 67))
+
+o = open("resources/cleaned_html.txt", "r")
+text = o.read().splitlines()
+
+for i in range(1, 9):
+    j = list1[i]
+    f = open("pages/00" + str(j) + ".html", "w")
+    f.write(template1)
+    f.write(text[0])
+    text = text[1:]
+    f.write(template15)
+    while '~~~~~~~' not in text[0]:
+        line = text[0]
+        if line:
+            f.write(span1)
+            f.write("      " + line)
+            f.write(span2)
+        text = text[1:]
+    if '~~~~~~~' in text[0]:
+        f.write(span3)
+        f.write("      " + text[0])
+        f.write(span2)
+        text = text[2:]
+    f.write(template2)
+    f.write(tag1)
+    f.write(str(list1[i-1]))
+    f.write(tag2)
+    f.write(tag1)
+    f.write(str(list1[i+1]))
+    f.write(tag4)
+    f.write(template3)
     f.close()
 
-for i in range(10, 66):
-    f = open("pages/0" + str(i) + ".html", "w")
-    f.write(template)
+for i in range(1, len(list2)-1):
+    j = list2[i]
+    f = open("pages/0" + str(j) + ".html", "w")
+    f.write(template1)
+    f.write(text[0])
+    text = text[1:]
+    f.write(template15)
+    while '~~~~~~~' not in text[0]:
+        line = text[0]
+        if line:
+            f.write(span1)
+            f.write("      " + line)
+            f.write(span2)
+        text = text[1:]
+    if '~~~~~~~' in text[0]:
+        f.write(span3)
+        f.write("      " + text[0])
+        f.write(span2)
+        text = text[2:]
+    f.write(template2)
+    f.write(tag3)
+    f.write(str(list2[i-1]))
+    f.write(tag2)
+    f.write(tag3)
+    f.write(str(list2[i+1]))
+    f.write(tag4)
+    f.write(template3)
     f.close()
