@@ -3,10 +3,6 @@
   margin-top: 40px;
 }
 
-.audio-player {
-  margin-top: 10px;
-}
-
 .section_header {
   display: flex;
   flex-wrap: wrap;
@@ -19,14 +15,14 @@
 
 .left {
   float: left;
-  margin-right: 40px;
+  margin-left: 8%;
   margin-top: 5px;
   margin-bottom: 10px;
 }
 
 .right {
   float: right;
-  margin-right: 55px;
+  margin-right: 8%;
   margin-top: 5px;
   margin-bottom: 10px;
 }
@@ -391,9 +387,5 @@ footer {
     background: none;
     border: none;
     margin-left: 10px;
-  }
-
-  .audio {
-    display: inline-table;
   }
 }
