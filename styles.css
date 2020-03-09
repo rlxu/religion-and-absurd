@@ -315,6 +315,9 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+  .section_header a {
+    margin-bottom: 10px;
+  }
   .left {
     float: left;
     margin-top: 5px;
@@ -340,6 +343,7 @@ footer {
     margin-bottom: 10px;
     display: block;
     float: none;
+    max-width: 90%;
   }
   .img-caption {
     text-align: center;
@@ -347,6 +351,7 @@ footer {
     margin-right: auto;
     margin-left: auto;
     float: none;
+    max-width: 90%;
   }
 }
 
