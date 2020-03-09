@@ -293,7 +293,7 @@ footer {
   padding-top: 15px;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px) {
   .text_body {
     width: 100%;
     margin-top: 25px;
@@ -323,7 +323,34 @@ footer {
   }
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 700px) {
+  .img_cover {
+    width: 60%;
+  }
+  #toc_container {
+    width: 88%;
+    font-size: 100%;
+  }
+  .toc_list li {
+    margin-bottom: 10px;
+  }
+  .inline-img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: block;
+    float: none;
+  }
+  .img-caption {
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
   .text_body {
     width: 100%;
     margin-top: 20px;
@@ -347,7 +374,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
   .text_body {
     width: 100%;
     margin-top: 15px;
