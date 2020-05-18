@@ -190,6 +190,11 @@ ul {
   margin-bottom: 5px;
 }
 
+.see_more {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 button {
   cursor: pointer;
 }
