@@ -1,4 +1,4 @@
 # religion-and-absurd
-Website to host Religion and the Absurd text by Stephen Johnson
+Website to host _Religion and the Absurd_ text by Stephen Johnson
 
 Link: [religionandabsurd.com](http://www.religionandabsurd.com)
